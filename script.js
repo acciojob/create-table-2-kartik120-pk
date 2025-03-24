@@ -1,11 +1,11 @@
 function createTable() {
     // Get user input for rows and columns
-    let rn = prompt("Input number of rows:");
-    let cn = prompt("Input number of columns:");
+    let rn = prompt("Input number of rows"); // Ensure exact text
+    let cn = prompt("Input number of columns"); // Ensure exact text
 
     // Convert input to integers
-    rn = parseInt(rn);
-    cn = parseInt(cn);
+    rn = parseInt(rn, 10);
+    cn = parseInt(cn, 10);
 
     // Validate user input
     if (isNaN(rn) || isNaN(cn) || rn <= 0 || cn <= 0) {
